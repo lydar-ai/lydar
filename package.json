@@ -9,13 +9,33 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "turbo": "^2.1.1",
     "typescript": "^5.4.5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "printWidth": 100,
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ],
+    "organizeImportsSkipDestructiveCodeActions": true,
+    "tailwindConfig": "./packages/ui/tailwind.config.ts",
+    "tailwindFunctions": [
+      "twMerge",
+      "clsx",
+      "cva",
+      "cn"
+    ]
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "bun@1.1.21",
+  "packageManager": "bun@1.1.26",
   "workspaces": [
     "apps/*",
     "packages/*"
