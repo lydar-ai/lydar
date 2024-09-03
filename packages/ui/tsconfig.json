@@ -2,10 +2,8 @@
   "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
+    // Path not supported in JIT packages - https://turbo.build/repo/docs/core-concepts/internal-packages#limitations-and-tradeoffs
   },
-  "include": ["components", "hooks", "lib"],
+  "include": ["@"],
   "exclude": ["node_modules"]
 }
