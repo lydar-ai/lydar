@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./button": "./@/components/ui/button.tsx",
-    "./lib/utils": "./@/lib/utils.ts",
+    "./button": "./components/ui/button.tsx",
+    "./lib/utils": "./lib/utils.ts",
     "./globals.css": "./globals.css",
     "./postcss.config": "./postcss.config.js",
     "./tailwind.config": "./tailwind.config.ts"
