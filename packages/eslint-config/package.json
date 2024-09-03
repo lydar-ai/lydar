@@ -1,7 +1,11 @@
 {
-  "name": "@repo/eslint-config",
+  "name": "@lydar/eslint-config",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
   "files": [
     "library.js",
     "next.js",

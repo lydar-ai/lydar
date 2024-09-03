@@ -1,4 +1,4 @@
-import baseConfig from '@repo/ui/tailwind.config'
+import baseConfig from '@lydar/ui/tailwind.config'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {

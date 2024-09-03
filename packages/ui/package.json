@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ui",
+  "name": "@lydar/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -10,11 +10,14 @@
     "./tailwind.config": "./tailwind.config.ts"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --max-warnings 0 --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
+    "@lydar/eslint-config": "*",
+    "@lydar/typescript-config": "*",
     "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",
     "@types/react": "^18.2.61",

@@ -1,4 +1,4 @@
-import { Button } from '@repo/ui/button'
+import { Button } from '@lydar/ui/button'
 
 export default function Home() {
   return (

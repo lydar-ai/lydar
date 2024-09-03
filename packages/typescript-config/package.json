@@ -1,7 +1,11 @@
 {
-  "name": "@repo/typescript-config",
+  "name": "@lydar/typescript-config",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
   "license": "MIT",
   "publishConfig": {
     "access": "public"

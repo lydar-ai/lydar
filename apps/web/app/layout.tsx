@@ -1,4 +1,4 @@
-import '@repo/ui/globals.css'
+import '@lydar/ui/globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 

@@ -2,6 +2,15 @@ const { resolve } = require('node:path')
 
 const project = resolve(process.cwd(), 'tsconfig.json')
 
+/*
+ * This is a custom ESLint configuration for use with
+ * Next.js apps.
+ *
+ * This config extends the Vercel Engineering Style Guide.
+ * For more information, see https://github.com/vercel/style-guide
+ *
+ */
+
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: [
@@ -10,6 +19,7 @@ module.exports = {
     require.resolve('@vercel/style-guide/eslint/next'),
     'turbo',
   ],
+  plugins: ['only-warn'],
   globals: {
     React: true,
     JSX: true,
@@ -18,7 +28,6 @@ module.exports = {
     node: true,
     browser: true,
   },
-  plugins: ['only-warn'],
   settings: {
     'import/resolver': {
       typescript: {
